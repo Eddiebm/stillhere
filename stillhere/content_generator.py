@@ -4,7 +4,7 @@ Uses OpenAI to generate authentic-sounding social media posts
 """
 
 import os
-from typing import List, Dict
+from typing import List, Dict, Any
 from openai import OpenAI
 
 
@@ -28,7 +28,7 @@ class ContentGenerator:
         topic: str, 
         platform: str, 
         business_info: Dict[str, str],
-        style_preferences: Dict[str, any],
+        style_preferences: Dict[str, Any],
         max_length: int = 280
     ) -> str:
         """
@@ -84,7 +84,7 @@ class ContentGenerator:
         topic: str, 
         platform: str, 
         business_info: Dict[str, str],
-        style_preferences: Dict[str, any],
+        style_preferences: Dict[str, Any],
         max_length: int
     ) -> str:
         """Build the prompt for content generation"""

@@ -41,9 +41,6 @@ class TwitterConnector(PlatformConnector):
         if self.is_configured():
             try:
                 import tweepy
-                auth = tweepy.OAuthHandler(self.api_key, self.api_secret)
-                auth.set_access_token(self.access_token, self.access_secret)
-                api = tweepy.API(auth)
                 self.client = tweepy.Client(
                     consumer_key=self.api_key,
                     consumer_secret=self.api_secret,

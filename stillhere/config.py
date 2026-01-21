@@ -6,7 +6,6 @@ Handles loading and managing configuration
 import os
 import yaml
 from typing import Dict, Any
-from pathlib import Path
 
 
 class Config:

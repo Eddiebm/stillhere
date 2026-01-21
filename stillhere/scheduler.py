@@ -5,8 +5,7 @@ Handles scheduling and executing posts
 
 import random
 import time
-from datetime import datetime, timedelta
-from typing import List
+from datetime import datetime
 import schedule
 
 from .content_generator import ContentGenerator
