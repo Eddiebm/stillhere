@@ -1,0 +1,42 @@
+# Stillhere Configuration
+
+# Posting schedule
+schedule:
+  # How many times per week to post
+  posts_per_week: 3
+  # Preferred posting times (24-hour format)
+  preferred_times:
+    - "09:00"
+    - "14:00"
+    - "18:00"
+
+# Platforms to post on
+platforms:
+  twitter:
+    enabled: true
+    max_length: 280
+  linkedin:
+    enabled: true
+    max_length: 3000
+  instagram:
+    enabled: false  # Requires more setup
+    max_length: 2200
+
+# Content settings
+content:
+  # Topics to generate content about
+  topics:
+    - "business updates"
+    - "industry insights"
+    - "motivational quotes"
+    - "tips and tricks"
+  # Your business information
+  business:
+    name: "Your Business Name"
+    industry: "Your Industry"
+    tone: "professional but friendly"
+  # Content style preferences
+  style:
+    use_emojis: false
+    use_hashtags: true
+    max_hashtags: 3
