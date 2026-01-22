@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeepAlive - AI Social Media Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, #4F46E5, #7C3AED);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-slate-800 bg-slate-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i data-lucide="zap" class="h-8 w-8 text-indigo-600"></i>
+                    <span class="ml-2 text-xl font-bold text-slate-900">KeepAlive</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-slate-600 hover:text-indigo-600 transition">Features</a>
+                    <a href="#how-it-works" class="text-slate-600 hover:text-indigo-600 transition">How it Works</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-indigo-600 transition">Pricing</a>
+                    <a href="#cta" class="px-4 py-2 rounded-md bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-white overflow-hidden">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover opacity-10" src="/workspace/imgs/abstract-blue-purple-gradient-tech-background.jpg" alt="Background pattern">
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+            <div class="lg:w-2/3">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 mb-6">
+                    <span class="flex h-2 w-2 rounded-full bg-indigo-600 mr-2"></span>
+                    <span class="text-sm font-medium text-indigo-600">New: Multi-Platform Analytics</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                    AI-Powered Social Media Management for <span class="text-gradient">Founders</span>
+                </h1>
+                <p class="text-xl text-slate-600 mb-10 max-w-2xl">
+                    Generate posts, schedule across 10 platforms, and grow your presence without hiring a social media manager.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <form onsubmit="event.preventDefault(); console.log('Email submitted:', this.querySelector('input').value); alert('Thanks! We will notify you.');" class="flex-1 flex gap-2 max-w-md">
+                        <input type="email" required placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none">
+                        <button type="submit" class="px-6 py-3 rounded-lg bg-indigo-600 text-white font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">
+                            Start Free Trial
+                        </button>
+                    </form>
+                </div>
+                <p class="mt-4 text-sm text-slate-500 flex items-center gap-2">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i> No credit card required
+                    <i data-lucide="check-circle" class="w-4 h-4 text-green-500 ml-4"></i> 14-day free trial
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Social Proof / Logos -->
+    <section class="border-y border-slate-100 bg-slate-50 py-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-6">Trusted by founders at</p>
+            <div class="flex justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Using text as placeholders for logos in this text-based env, but simulating logos -->
+                <span class="text-xl font-bold text-slate-800 flex items-center gap-2"><i data-lucide="box" class="w-6 h-6"></i> Acme</span>
+                <span class="text-xl font-bold text-slate-800 flex items-center gap-2"><i data-lucide="hexagon" class="w-6 h-6"></i> Nexus</span>
+                <span class="text-xl font-bold text-slate-800 flex items-center gap-2"><i data-lucide="triangle" class="w-6 h-6"></i> Vertex</span>
+                <span class="text-xl font-bold text-slate-800 flex items-center gap-2"><i data-lucide="circle" class="w-6 h-6"></i> Sphere</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get (Feature Grid) -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Everything you need to dominate social</h2>
+                <p class="text-lg text-slate-600">Stop wasting hours on copy and scheduling. Let AI handle the heavy lifting while you focus on product.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-600 mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">AI Content Generation</h3>
+                    <p class="text-slate-600">Create weeks of engaging content in minutes. Our AI learns your voice and brand style.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-purple-600 mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="share-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">10+ Platforms</h3>
+                    <p class="text-slate-600">Post simultaneously to Twitter, LinkedIn, Instagram, Facebook, and more with one click.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="calendar-clock" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Smart Scheduling</h3>
+                    <p class="text-slate-600">Auto-queue posts for optimal times when your audience is most active online.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center text-pink-600 mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="bar-chart-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Deep Analytics</h3>
+                    <p class="text-slate-600">Track engagement, follower growth, and click-through rates across all channels in one dashboard.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center text-orange-600 mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Unified Inbox</h3>
+                    <p class="text-slate-600">Reply to comments and DMs from all platforms without switching tabs.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-teal-100 flex items-center justify-center text-teal-600 mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="repeat" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Content Recycling</h3>
+                    <p class="text-slate-600">Automatically re-post your evergreen high-performing content to maximize reach.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">How It Works</h2>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+                <div class="flex-1 text-center px-4">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full shadow-lg flex items-center justify-center text-2xl font-bold text-indigo-600 mb-6 border border-slate-100">1</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Connect Accounts</h3>
+                    <p class="text-slate-600">Securely link your social profiles in seconds.</p>
+                </div>
+                <div class="hidden md:block w-16 pt-8 text-slate-300">
+                    <i data-lucide="arrow-right" class="w-8 h-8 mx-auto"></i>
+                </div>
+                <div class="flex-1 text-center px-4">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full shadow-lg flex items-center justify-center text-2xl font-bold text-indigo-600 mb-6 border border-slate-100">2</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Set Topics</h3>
+                    <p class="text-slate-600">Tell our AI what your business is about and your tone.</p>
+                </div>
+                <div class="hidden md:block w-16 pt-8 text-slate-300">
+                    <i data-lucide="arrow-right" class="w-8 h-8 mx-auto"></i>
+                </div>
+                <div class="flex-1 text-center px-4">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full shadow-lg flex items-center justify-center text-2xl font-bold text-indigo-600 mb-6 border border-slate-100">3</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Review & Post</h3>
+                    <p class="text-slate-600">Approve AI suggestions or let it run on autopilot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-slate-50 -skew-y-3 origin-top-left z-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-lg text-slate-600">Choose the plan that fits your growth stage.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Free -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 flex flex-col">
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2">Free</h3>
+                    <div class="text-4xl font-bold text-slate-900 mb-6">$0<span class="text-base font-normal text-slate-500">/mo</span></div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> 3 Social Accounts</li>
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> 10 Scheduled Posts</li>
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> Basic Analytics</li>
+                    </ul>
+                    <a href="#cta" class="block w-full py-3 px-4 bg-slate-100 text-slate-700 font-semibold rounded-lg text-center hover:bg-slate-200 transition">Get Started</a>
+                </div>
+
+                <!-- Starter -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 flex flex-col relative">
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2">Starter</h3>
+                    <div class="text-4xl font-bold text-slate-900 mb-6">$29<span class="text-base font-normal text-slate-500">/mo</span></div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> 5 Social Accounts</li>
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> Unlimited Posts</li>
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> AI Caption Generator</li>
+                    </ul>
+                    <a href="#cta" class="block w-full py-3 px-4 bg-indigo-50 text-indigo-700 font-semibold rounded-lg text-center hover:bg-indigo-100 transition">Start Trial</a>
+                </div>
+
+                <!-- Pro -->
+                <div class="bg-white rounded-2xl shadow-xl border-2 border-indigo-600 p-8 flex flex-col relative transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2">Pro</h3>
+                    <div class="text-4xl font-bold text-slate-900 mb-6">$79<span class="text-base font-normal text-slate-500">/mo</span></div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> 10 Social Accounts</li>
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> Advanced Analytics</li>
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> Competitor Tracking</li>
+                    </ul>
+                    <a href="#cta" class="block w-full py-3 px-4 bg-indigo-600 text-white font-semibold rounded-lg text-center hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Start Free Trial</a>
+                </div>
+
+                <!-- Agency -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 flex flex-col">
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2">Agency</h3>
+                    <div class="text-4xl font-bold text-slate-900 mb-6">$199<span class="text-base font-normal text-slate-500">/mo</span></div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> Unlimited Accounts</li>
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> White Label Reports</li>
+                        <li class="flex items-center text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> Dedicated Support</li>
+                    </ul>
+                    <a href="#cta" class="block w-full py-3 px-4 bg-slate-100 text-slate-700 font-semibold rounded-lg text-center hover:bg-slate-200 transition">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="py-24 bg-slate-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+             <img class="w-full h-full object-cover" src="/workspace/imgs/abstract-blue-purple-gradient-tech-background.jpg" alt="Background">
+        </div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to grow your audience?</h2>
+            <p class="text-xl text-indigo-200 mb-10">Join 10,000+ founders using KeepAlive to automate their social presence.</p>
+            
+            <form onsubmit="event.preventDefault(); console.log('CTA Email submitted:', this.querySelector('input').value); alert('Thanks! You are on the list.');" class="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+                <input type="email" required placeholder="Enter your email address" class="flex-1 px-5 py-3 rounded-lg text-slate-900 focus:ring-2 focus:ring-indigo-500 outline-none">
+                <button type="submit" class="px-8 py-3 rounded-lg bg-indigo-600 text-white font-bold hover:bg-indigo-500 transition shadow-lg">
+                    Start Free Trial
+                </button>
+            </form>
+            <p class="mt-4 text-sm text-slate-400">No credit card required • Cancel anytime</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 py-12 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <i data-lucide="zap" class="h-6 w-6 text-indigo-600"></i>
+                <span class="ml-2 text-lg font-bold text-slate-900">KeepAlive</span>
+            </div>
+            <div class="text-slate-500 text-sm">
+                &copy; 2026 KeepAlive Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
